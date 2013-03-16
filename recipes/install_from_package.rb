@@ -32,7 +32,7 @@ case node['platform_family']
       options '--nogpgcheck'
     end
 
-    %w{ nodejs nodejs-compat-symlinks npm }.each do |pkg|
+    %w{ nodejs nodejs-compat-symlinks }.each do |pkg|
       package pkg
     end
   when 'debian'
